@@ -1,1 +1,3 @@
-npx @tailwindcss/cli -i ./styles/input.css -o ./styles/output.css --watch
+# Firebase Email Authentication
+
+Tailwind: npx @tailwindcss/cli -i ./styles/input.css -o ./styles/output.css --watch
