@@ -14,7 +14,7 @@ form.addEventListener("submit", (event) => {
         .then((userCredential) => {
             // Signed up 
             const user = userCredential.user;
-            window.location = "./../pages/signIn.html"
+            window.location = "../index.html"
             // ...
         })
         .catch((error) => {
