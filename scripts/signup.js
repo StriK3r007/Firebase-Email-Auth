@@ -14,7 +14,7 @@ form.addEventListener("submit", (event) => {
         .then((userCredential) => {
             // Signed up 
             const user = userCredential.user;
-            window.location = "../index.html"
+            window.location = "../signIn.html"
             // ...
         })
         .catch((error) => {
@@ -34,11 +34,11 @@ showPasswordElements.forEach(element => {
         if (password.type === "password") {
             password.type = "text";
             confirmPassword.type = "text";
-            element.innerText = "🙈";
+            element.innerText = "🙉";
         } else {
             password.type = "password";
             confirmPassword.type = "password";
-            element.innerText = "🙉";
+            element.innerText = "🙈";
         }
     });
 });

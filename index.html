@@ -5,49 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/output.css">
-    <title>Firebase Assignment 01 | Signin</title>
+    <title>Firebase Assignment 01 | Email Authentication</title>
 </head>
 
-<body class="select-none">
+<body id="body">
     <section class="body-font w-screen h-screen bg-linear-to-r from-[#f43f5e] via-[#db2777] to-[#ef4444]">
-    <div class="container mx-auto h-full flex justify-center items-center p-2">
-        <div class="text-gray-500 bg-white p-10 rounded-2xl w-full sm:w-96">
-            <div class="text-center mb-4">
-                <h1 class="text-3xl font-bold my-1">Sign In</h1>
-                <p>Welcome back! Please sign in to continue</p>
+    <div class="container mx-auto h-full flex justify-center items-center">
+        <div class="text-gray-500 bg-white p-10 rounded-2xl w-full sm:w-150">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold text-[#db2777]">Please! Sign In to continue...</h1>
             </div>
-            <form id="form">
-                <div class="flex flex-col gap-4">
-                    <div class="flex flex-col gap-2">
-                        <label class="font-semibold" for="email">Email</label>
-                        <input class="border-2 border-red-400 rounded p-2 outline-0" type="email" id="email" placeholder="Type your email" required aria-label="Email">
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <label class="font-semibold" for="password">Password</label>
-                        <div class="flex justify-between items-center border-2 border-red-400 rounded">
-                            <input class="p-2 w-full outline-0" type="password" id="password" placeholder="Type your password" required aria-label="Password">
-                            <span class="p-2 cursor-pointer" id="show-password">🙉</span>
-                        </div>
-                    </div>
-                    <div class="self-end font-semibold">
-                        <input class="cursor-pointer hover:underline transition" type="button" value="Forget password?" aria-label="Forget password link">
-                    </div>
-                    <div class="self-center w-full">
-                        <input class="p-2 w-full text-white font-bold rounded-3xl cursor-pointer hover:shadow active:shadow-2xs transition bg-gradient-to-r from-[#f43f5e] via-[#db2777] to-[#ef4444]" type="submit" value="Sign In">
-                    </div>
-                </div>
-            </form>            
-            <div class="mt-6">
-                <div class="text-center">
-                    <span>Don't have an account?</span>
-                    <a href="./pages/signUp.html" class="font-semibold text-[#db2777] ml-1">Sign Up</a>
-                </div>
+            <div class="self-center text-center w-full mt-10">
+                <input class="p-2 w-full sm:w-30 text-white font-bold rounded-3xl cursor-pointer hover:shadow active:shadow-2xs transition bg-linear-to-r from-[#f43f5e] via-[#db2777] to-[#ef4444]" type="submit" value="Signin" onclick="window.location = './signIn.html'">
             </div>
         </div>
     </div>
 </section>
-
-    <script type="module" src="./scripts/signin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 

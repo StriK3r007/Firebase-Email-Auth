@@ -13,7 +13,7 @@ form.addEventListener("submit", (event) => {
             // Signed in 
             const user = userCredential.user;
             // ...
-            window.location = "./../pages/homePage.html"
+            window.location = "../welcome.html"
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -32,11 +32,11 @@ const showPassword = document.getElementById("show-password")
 showPassword.addEventListener("click", () => {
     if (password.type === "password") {
         password.type = "text"
-        showPassword.innerText = "🙈"
+        showPassword.innerText = "🙉"
     }
     else {
         password.type = "password"
-        showPassword.innerText = "🙉"
+        showPassword.innerText = "🙈"
 
     }
 })
